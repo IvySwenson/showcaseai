@@ -67,6 +67,16 @@ When backend & AI features are added, you’ll create a .env file like:
 OPENAI_API_KEY=sk-xxxx
 MONGODB_URI=mongodb+srv://...
 ```
+## 🌍 Roadmap
+
+- [x] Initialize frontend scaffold (Next.js + Tailwind + TS)
+- [x] Create landing page with branding
+- [ ] Add file upload for README
+- [ ] Implement `/api/analyze` for AI summarization
+- [ ] Store results in MongoDB
+- [ ] Generate shareable project cards
+- [ ] PDF export + Interview Q&A generator
+- [ ] Deploy frontend (Vercel) + backend (Render/Fly.io)
 
 
 ## 👩‍💻 Author
