@@ -59,6 +59,8 @@ pnpm install
 # Run development server
 pnpm dev
 # → http://localhost:3000
+```bash
+
 ## 👩‍💻 Author
 
 **Ivy Swenson**
