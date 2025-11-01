@@ -89,8 +89,7 @@ not just the code, but the story behind it.
 🧑‍💻 Authors
 | Name            | Role                | Links                                     |
 | --------------- | ------------------- | ----------------------------------------- |
-| **Ivy Swenson** | Founder & Developer | [GitHub ↗](https://github.com/IvySwenson) |
-| **查宝儿**         | AI Dev Partner      | ChatGPT Collaboration                     |
+| **Ivy Swenson** | Founder & Developer | [GitHub ↗](https://github.com/IvySwenson) | |
 
 🪪 License
 
