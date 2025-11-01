@@ -85,3 +85,8 @@ MONGODB_URI=mongodb+srv://...
 Computer Science Student @ University of Alaska Fairbanks
 Interested in algorithms, system design, and AI-driven data visualization.
 
+## 🪪 License
+
+This project is released under the MIT License
+.
+
