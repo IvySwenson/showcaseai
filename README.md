@@ -60,6 +60,14 @@ pnpm install
 pnpm dev
 # → http://localhost:3000
 ```
+🔐 Environment Variables (for later)
+
+When backend & AI features are added, you’ll create a .env file like:
+```bash
+OPENAI_API_KEY=sk-xxxx
+MONGODB_URI=mongodb+srv://...
+```
+
 
 ## 👩‍💻 Author
 
