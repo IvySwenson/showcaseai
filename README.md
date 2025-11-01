@@ -59,3 +59,9 @@ pnpm install
 # Run development server
 pnpm dev
 # → http://localhost:3000
+## 👩‍💻 Author
+
+**Ivy Swenson**
+Computer Science Student @ University of Alaska Fairbanks
+Interested in algorithms, system design, and AI-driven data visualization.
+
