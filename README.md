@@ -64,38 +64,3 @@ pnpm dev
 When backend & AI features are added, you’ll create a .env file like:
 OPENAI_API_KEY=sk-xxxx
 MONGODB_URI=mongodb+srv://...
-🗺️ Roadmap
-
- Initialize frontend scaffold (Next.js + Tailwind + TS)
-
- Create landing page with branding
-
- Add file upload for README
-
- Implement /api/analyze for AI summarization
-
- Store results in MongoDB
-
- Generate shareable project cards
-
- PDF export + Interview Q&A generator
-
- Deploy frontend (Vercel) + backend (Render/Fly.io)
- 💡 Why it Matters
-
-Because every developer deserves a portfolio that shows what they can build —
-not just the code, but the story behind it.
-
-🧑‍💻 Authors
-| Name            | Role                | Links                                     |
-| --------------- | ------------------- | ----------------------------------------- |
-| **Ivy Swenson** | Founder & Developer | [GitHub ↗](https://github.com/IvySwenson) | |
-
-🪪 License
-
-This project is released under the MIT License
-
-🖤 Footer
-
-“Built with creativity, caffeine, and code.” ☕✨
-© 2025 ShowCaseAI — Created by Ivy Swenson with ❤️
