@@ -33,7 +33,7 @@ It’s designed for portfolio builders, resume writers, and creators who want to
 | **AI API (planned)** | OpenAI GPT models |
 
 ---
-
+```
 ## 🧩 Project Structure
 showcaseai/
 ├── web/ # Next.js frontend
@@ -41,7 +41,7 @@ showcaseai/
 │ ├── src/components/ # Shared UI (future)
 │ └── tailwind.css
 └── api/ # Express backend (coming soon)
-
+```
 ---
 
 ## ▶️ Local Development
