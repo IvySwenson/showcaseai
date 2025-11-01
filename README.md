@@ -1,6 +1,6 @@
 # 🌟 ShowCaseAI — Your AI Project Analyst
 
-> Built by Ivy Swenson
+> Built by ** Ivy Swenson **
 > Transform your project notes or README into a clean summary, tech stack, and key highlights — ready for resumes, portfolios, and interviews.
 
 ---
