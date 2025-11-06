@@ -1,65 +1,108 @@
-import Image from "next/image";
+import ShowcaseGrid from "../components/ShowcaseGrid";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800">
+      {/* ✅ 测试 Tailwind 是否工作 */}
+      <div className="h-2 w-full bg-emerald-500"></div>
+
+      {/* 顶部导航 */}
+      <nav className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="h-7 w-7 rounded-xl bg-black" />
+          <span className="font-semibold tracking-tight">ShowCaseAI</span>
+        </div>
+        <div className="text-sm text-slate-600">
+          v0.1 • Next.js + Tailwind + TS
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+        <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-600 bg-white shadow-sm">
+          🚧 MVP in progress
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+        </div>
+
+        <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-6xl">
+          Your <span className="text-emerald-600">AI Project Analyst</span>
+        </h1>
+
+        <p className="mt-4 max-w-2xl text-slate-600 md:text-lg leading-relaxed">
+          Upload your README or project notes. We’ll extract the{" "}
+          <span className="font-medium text-slate-800">summary</span>,{" "}
+          <span className="font-medium text-slate-800">tech stack</span>, and{" "}
+          <span className="font-medium text-slate-800">key highlights</span> — ready for resumes,
+          portfolios, and interviews.
+        </p>
+
+        {/* 两个按钮 */}
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href="#"
+            className="rounded-xl bg-black px-5 py-3 text-white text-sm font-medium hover:opacity-90 transition"
+          >
+            Upload a Project (soon)
+          </a>
+          <a
+            href="#"
+            className="rounded-xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-800 hover:bg-slate-50 transition"
+          >
+            View Demo (placeholder)
+          </a>
+        </div>
+
+        {/* 三个特性卡片 */}
+        <div className="mt-12 grid gap-4 md:grid-cols-3">
+          {[
+            {
+              title: "Smart Summary",
+              desc: "Turn messy notes into a crisp project overview.",
+            },
+            {
+              title: "Tech Stack Autotag",
+              desc: "Detect frameworks, libraries, and tooling in seconds.",
+            },
+            {
+              title: "Interview Ready",
+              desc: "Auto-generate bullet points & sample Q&A.",
+            },
+          ].map((c) => (
+            <div
+              key={c.title}
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              <h3 className="font-semibold text-lg text-slate-800">{c.title}</h3>
+              <p className="mt-2 text-sm text-slate-600">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 下方 ShowcaseGrid */}
+      <ShowcaseGrid />
+
+      {/* 页脚 */}
+      <footer className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-slate-500">
+        <div className="flex flex-col items-center gap-1 md:flex-row md:justify-center md:gap-3">
+          <p>
+            © {new Date().getFullYear()}{" "}
+            <span className="font-medium text-slate-700">ShowCaseAI</span> — Created by{" "}
+            <span className="text-emerald-600 font-semibold hover:underline hover:decoration-emerald-500 transition">
+              Ivy Swenson
+            </span>{" "}
+            with ❤️
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/IvySwenson"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-slate-400 hover:text-emerald-600 text-xs"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            GitHub ↗
           </a>
         </div>
-      </main>
-    </div>
+      </footer>
+    </main>
   );
 }
